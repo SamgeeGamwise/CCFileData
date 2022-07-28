@@ -10,9 +10,14 @@ export default function handler(req, res) {
       if (fs.existsSync(`${clientContent}/${clients[i]}/VJT/projectConfig.json`)) {
         const clientDataSecond = JSON.parse(fs.readFileSync(`${clientContent}/${clients[i]}/VJT/projectConfig.json`, 'utf8').toString().trim())
 
-        clientData.push({ clientId: clients[i], ...clientDataSecond })
+        clientData.push({
+          clientId: clients[i],
+          ...clientDataSecond
+        })
       } else {
-        clientData.push({ clientId: clients[i] })
+        clientData.push({
+          clientId: clients[i]
+        })
       }
     } catch (error) {
       console.log(error);
