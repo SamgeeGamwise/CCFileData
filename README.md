@@ -5,7 +5,7 @@ Clone Repo to match the following folder structure:
 * source
     * repos
         * ClientContent
-    * code
+    * tools
         * VJTBuildTools-Next (CLONE HERE)
 
 
