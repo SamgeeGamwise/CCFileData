@@ -37,6 +37,7 @@ export default function GetQuestions(props) {
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(codeRef.current.innerText);
+    alert("Copied to clipboard!")
   }
 
   return (
