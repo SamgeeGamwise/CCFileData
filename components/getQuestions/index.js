@@ -1,12 +1,10 @@
-import Head from "next/head";
-
 import React, { useRef, useState } from "react";
 import styles from "../../styles/getQuestions.module.css";
 import Navbar from "../../components/navbar";
+import HTMLHead from "../../components/htmlHead"
 
 export default function GetQuestions(props) {
   const [questions, setQuestions] = useState("");
-  const [mainJson, setMainJson] = useState("");
   const codeRef = useRef(null)
 
   const getQuestions = () => {
@@ -42,11 +40,7 @@ export default function GetQuestions(props) {
 
   return (
     <>
-      <Head>
-        <title>{props.title}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HTMLHead title={props.title} />
       <Navbar />
       <div className="container mt-3">
       <div className="row ">

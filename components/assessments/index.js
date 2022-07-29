@@ -14,7 +14,7 @@ export default function Assessments(props) {
 
     return (
         <>
-            <table className="table table-light table-striped">
+            <table className="table table-light">
                 <thead>
                     <tr >
                         <th>{props.assessments[Object.keys(props.assessments)[0]].clientRoot.replace("/", "")}</th>

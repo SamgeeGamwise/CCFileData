@@ -1,6 +1,6 @@
-import Head from "next/head";
-import React, { useState, useEffect } from "react";
-import Client from "../../components/client";
+import HTMLHead from "../../components/htmlHead"
+import React, { useState } from "react";
+import Assessments from "../../components/assessments";
 import Navbar from "../../components/navbar";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
 
   const renderClients = () =>
     clients.map((client, index) => (
-      <Client
+      <Assessments
         key={index}
         clientId={client.clientId}
         assessments={client.assessments}
@@ -23,11 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Client Content</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HTMLHead title="Client Content" />
       <Navbar />
       <div className="container mt-3">
         <div className="row">
