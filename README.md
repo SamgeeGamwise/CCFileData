@@ -6,7 +6,7 @@ Clone Repo to match the following folder structure:
     * repos
         * ClientContent
     * code
-        * nextapp (CLONE HERE)
+        * VJTBuildTools-Next (CLONE HERE)
 
 
 First, run the development server:
